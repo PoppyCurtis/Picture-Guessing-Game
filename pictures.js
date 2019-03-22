@@ -7,7 +7,9 @@ function init() {
     } 
 }
 
-function showAnswer() {
-    var image = document.getElementById("zero");
-    image.src = "zero.jpg";
+function showAnswer(eventObj) {
+   var image = eventObj.target;
+   var name = image.id;   
+   name = name + ".jpg";   
+   image.src = name; 
 }
